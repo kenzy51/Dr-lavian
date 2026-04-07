@@ -1,317 +1,312 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. Idan Lavian, DDS | General Dentist</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --primary: #1a1a1a;
-        --accent: #c5a059; /* Modern Gold */
-        --bg: #fdfdfd;
-        --text: #333;
-        --glass: rgba(255, 255, 255, 0.8);
-        --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      }
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Idan Lavian, DDS | General Dentist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1a1a1a;
+      --accent: #c5a059;
+      --bg: #fdfdfd;
+      --text: #333;
+      --glass: rgba(255, 255, 255, 0.8);
+      --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
 
-      body {
-        font-family: "Inter", sans-serif;
-        background-color: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-        overflow-x: hidden;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      /* Navigation */
-      nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        padding: 1.5rem 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: var(--glass);
-        backdrop-filter: blur(10px);
-        z-index: 1000;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      }
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-      .logo {
-        font-family: "Playfair Display", serif;
-        font-weight: 700;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-      }
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1.5rem 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
 
-      .cta-button {
-        background: var(--primary);
-        color: white;
-        padding: 0.8rem 1.5rem;
-        text-decoration: none;
-        border-radius: 50px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        transition: var(--transition);
-      }
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
 
-      .cta-button:hover {
-        background: var(--accent);
-        transform: translateY(-2px);
-      }
+    .cta-button {
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
 
-      /* Hero Section */
-      header {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        padding: 0 10%;
-        padding-top: 80px;
-        background: radial-gradient(
-          circle at 80% 20%,
-          #f9f4f0 0%,
-          #ffffff 100%
-        );
-      }
+    .cta-button:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+    }
 
-      .hero-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-      }
+    /* Hero Section */
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 10% 60px; /* Replaces <br> tags */
+      background: radial-gradient(circle at 80% 20%, #f9f4f0 0%, #ffffff 100%);
+    }
 
-      .hero-text h1 {
-        font-family: "Playfair Display", serif;
-        font-size: 4.5rem;
-        line-height: 1.1;
-        margin-bottom: 1.5rem;
-      }
+    .hero-container {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 4rem;
+      align-items: center;
+      width: 100%;
+    }
 
-      .hero-text h1 span {
-        display: block;
-        color: var(--accent);
-        font-style: italic;
-        font-size: 1.5rem;
-        font-family: "Inter", sans-serif;
-        font-weight: 300;
-        letter-spacing: 5px;
-        margin-top: 10px;
+    .hero-text h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(3rem, 8vw, 4.5rem);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text h1 span {
+      display: block;
+      color: var(--accent);
+      font-style: italic;
+      font-size: 1.5rem;
+      font-family: "Inter", sans-serif;
+      font-weight: 300;
+      letter-spacing: 5px;
+      margin-top: 10px;
+    }
+
+    /* FIX: Improved Image Handling */
+    .hero-image {
+      position: relative;
+      height: 600px;
+      width: 100%;
+      background: #eee url("./drLavian.jpeg") no-repeat;
+      background-size: contain; /* Prevents cropping */
+      background-position: bottom center; /* Keeps the head visible */
+      border-radius: 20px;
+      /* Removed heavy shadow for a cleaner look if background is white */
+    }
+
+    /* Content Section */
+    .content-section {
+      padding: 8rem 10%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .grid-bio {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 6rem;
+    }
+
+    .bio-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    /* FIX: Highlights Section Grid */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      border-top: 1px solid #eee;
+      padding-top: 4rem;
+    }
+
+    .stat-card {
+      padding: 1rem 2rem;
+      border-left: 2px solid var(--accent);
+    }
+
+    .stat-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 5rem 10%;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .contact-info h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 968px) {
+      .hero-container,
+      .grid-bio,
+      .footer-grid,
+      .highlights {
+        grid-template-columns: 1fr; /* Stacks everything on mobile */
       }
 
       .hero-image {
-        position: relative;
-        height: 600px;
-        background: #eee url("./drLavian.jpeg") center/cover;
-        border-radius: 20px;
-        box-shadow: 0 40px 100px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Content Section */
-      .content-section {
-        padding: 10rem 10%;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .grid-bio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 6rem;
-      }
-
-      .bio-label {
-        font-size: 0.8rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: var(--accent);
-        margin-bottom: 2rem;
-        display: block;
-      }
-
-      .main-bio p {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-        color: #555;
-      }
-
-      /* Stats/Highlights */
-      .highlights {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        margin-top: 4rem;
+        height: 450px;
+        background-position: center;
       }
 
       .stat-card {
-        padding: 2rem;
-        border-left: 1px solid #eee;
+        padding: 1rem;
       }
 
-      .stat-card h3 {
-        font-family: "Playfair Display", serif;
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+      header {
+        padding-top: 100px;
       }
+    }
+  </style>
+</head>
 
-      /* Footer / Contact */
-      footer {
-        background: var(--primary);
-        color: white;
-        padding: 5rem 10%;
-      }
+<body>
+  <nav>
+    <div class="logo">IDAN LAVIAN PLLC</div>
+    <a href="https://booking.adit.com/4dcced5c-07a5-4e12-b80f-d470bca99a63" target="_blank" class="cta-button">Book Appointment</a>
+  </nav>
 
-      .footer-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 4rem;
-      }
-
-      .contact-info h2 {
-        font-family: "Playfair Display", serif;
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-      }
-
-      .contact-details p {
-        margin-bottom: 1rem;
-        opacity: 0.7;
-      }
-
-      @media (max-width: 968px) {
-        .hero-container,
-        .grid-bio,
-        .footer-grid {
-          grid-template-columns: 1fr;
-        }
-        .hero-text h1 {
-          font-size: 3rem;
-        }
-        .hero-image {
-          height: 400px;
-        }
-        header {
-          height: auto;
-          padding-bottom: 5rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">DR.LAVIAN DDS</div>
-      <a href="tel:2125615303" class="cta-button">Book Appointment</a>
-    </nav>
-    <br />
-    <br />
-    <br />
-    <header>
-      <div class="hero-container">
-        <div class="hero-text">
-          <h1>Dr. Idan Lavian <span>GENERAL DENTIST</span></h1>
-          <p>
-            Exceptional, patient-focused dental care in the heart of NYC.
-            Combining a gentle touch with cutting-edge clinical expertise.
-          </p>
-        </div>
-        <div class="hero-image"></div>
+  <header>
+    
+    <div class="hero-container">
+      <div class="hero-text">
+        <br>
+    <br>
+        <h1>Dr. Idan Lavian <span>GENERAL DENTIST</span></h1>
+        <p>
+          Exceptional, patient-focused dental care in the heart of NYC.
+          Combining a gentle touch with cutting-edge clinical expertise.
+        </p>
       </div>
-    </header>
+      <div class="hero-image"></div>
+    </div>
+  </header>
 
-    <section class="content-section">
-      <div class="grid-bio">
-        <div>
-          <span class="bio-label">Background & Education</span>
-          <p>
-            Dr. Idan Y. Lavian earned his Doctor of Dental Surgery degree from
-            <strong>Touro College of Dental Medicine</strong>. His foundation in
-            comprehensive oral health is built on a passion for helping patients
-            achieve confident, healthy smiles.
-          </p>
-          <p>
-            Following his doctoral studies, he completed a rigorous General
-            Practice Residency at <strong>Montefiore Medical Center</strong>,
-            mastering complex cases in high-stakes hospital settings.
-          </p>
-        </div>
-        <div>
-          <span class="bio-label">Expertise</span>
-          <p>
-            Dr. Lavian specialized further by working under the guidance of
-            leading Endodontists, refining his precision in
-            <strong>root canal therapy</strong> and advanced endodontic
-            procedures.
-          </p>
-          <p>
-            Today, he integrates evidence-based dentistry with a commitment to
-            lifelong learning, ensuring every patient benefits from the latest
-            dental innovations.
-          </p>
+  <section class="content-section">
+    <div class="grid-bio">
+      <div>
+        <span class="bio-label">Background & Education</span>
+        <p>
+          Dr. Idan Y. Lavian earned his Doctor of Dental Surgery degree from
+          <strong>Touro College of Dental Medicine</strong>. His foundation in
+          comprehensive oral health is built on a passion for helping patients
+          achieve confident, healthy smiles.
+        </p>
+        <br>
+        <p>
+          Following his doctoral studies, he completed a rigorous General
+          Practice Residency at <strong>Montefiore Medical Center</strong>,
+          mastering complex cases in high-stakes hospital settings.
+        </p>
+      </div>
+      <div>
+        <span class="bio-label">Expertise</span>
+        <p>
+          Dr. Lavian specialized further by working under the guidance of
+          leading Endodontists, refining his precision in
+          <strong>root canal therapy</strong> and advanced endodontic
+          procedures.
+        </p>
+        <br>
+        <p>
+          Today, he integrates evidence-based dentistry with a commitment to
+          lifelong learning, ensuring every patient benefits from the latest
+          dental innovations.
+        </p>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="stat-card">
+        <span class="bio-label">Residency</span>
+        <h3>Montefiore Medical Center</h3>
+        <p>Complex Case Management</p>
+      </div>
+      <div class="stat-card">
+        <span class="bio-label">Focus</span>
+        <h3>Endodontic Care</h3>
+        <p>Root Canal Therapy & Restorative</p>
+      </div>
+      <div class="stat-card">
+        <span class="bio-label">Interests</span>
+        <h3>Culinary Arts</h3>
+        <p>Recipe Exploration & Unwinding</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="contact-info">
+        <h2>Start Your Journey to a Healthy Smile.</h2>
+        <div class="contact-details">
+          <p>54 Warren St., New York, NY 10007</p>
+          <p>516-305-7713</p>
         </div>
       </div>
+      <div>
+        <span class="bio-label" style="color: white">Hours</span>
+        <p style="opacity: 0.7">Mon - Fri: 8am – 6pm</p>
+        <p style="opacity: 0.7">Sat: 9am – 4pm</p>
+        <p style="opacity: 0.7">Sun: 9am – 2pm</p>
+      </div>
+      <div>
+        <span class="bio-label" style="color: white">Social</span>
+        <p style="opacity: 0.7">Instagram</p>
+        <p style="opacity: 0.7">LinkedIn</p>
+        <p style="opacity: 0.7">Facebook</p>
+      </div>
+    </div>
+    <div style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.8rem; opacity: 0.5;">
+      © 2026 IDAN LAVIAN PLLC. All rights reserved.
+    </div>
+  </footer>
+</body>
 
-      <div class="highlights">
-        <div class="stat-card">
-          <h3>Residency</h3>
-          <p>Montefiore Medical Center</p>
-        </div>
-        <div class="stat-card">
-          <h3>Specialization</h3>
-          <p>Endodontic & Restorative Care</p>
-        </div>
-        <div class="stat-card">
-          <h3>Interests</h3>
-          <p>Culinary Arts & Recipe Exploration</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-grid">
-        <div class="contact-info">
-          <h2>Start Your Journey to a Healthy Smile.</h2>
-          <div class="contact-details">
-            <p>54 Warren St., New York, NY 10007</p>
-          </div>
-        </div>
-        <div>
-          <span class="bio-label" style="color: white">Hours</span>
-          <p style="opacity: 0.7">Mon - Fri: 8am – 6pm</p>
-          <p style="opacity: 0.7">Sat: 9am – 4pm</p>
-          <p style="opacity: 0.7">Sun: 9am – 2pm</p>
-        </div>
-        <div>
-          <span class="bio-label" style="color: white">Social</span>
-          <p style="opacity: 0.7">Instagram</p>
-          <p style="opacity: 0.7">LinkedIn</p>
-          <p style="opacity: 0.7">Facebook</p>
-        </div>
-      </div>
-      <div
-        style="
-          margin-top: 5rem;
-          padding-top: 2rem;
-          border-top: 1px solid rgba(255, 255, 255, 0.1);
-          font-size: 0.8rem;
-          opacity: 0.5;
-        "
-      >
-        DR.LAVIAN DDS. All rights reserved.
-      </div>
-    </footer>
-  </body>
 </html>
